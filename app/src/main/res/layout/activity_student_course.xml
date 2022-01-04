@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".student_course">
+
+    <TextView
+        android:id="@+id/st_home_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:textSize="20sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        ></TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/st_course_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                ></Button>
+            <Button
+                android:id="@+id/st_course_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                ></Button>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nagivation_student"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/icon_color_state"
+        app:itemTextColor="@drawable/icon_color_state"
+        app:menu="@menu/nav_items" />
+
+</RelativeLayout>

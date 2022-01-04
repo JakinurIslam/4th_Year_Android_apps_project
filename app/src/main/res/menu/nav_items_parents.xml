@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_parents_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_parents_home"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/item_parents_attendance"
+        android:enabled="true"
+        android:icon="@drawable/ic_parents_attendance"
+        android:title="Attendance"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/item_parents_marks"
+        android:enabled="true"
+        android:icon="@drawable/ic_parents_marks"
+        android:title="Marks"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/item_parents_notice"
+        android:enabled="true"
+        android:icon="@drawable/ic_parents_notice"
+        android:title="Notice"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

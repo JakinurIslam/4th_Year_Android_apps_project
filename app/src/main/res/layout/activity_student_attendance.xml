@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".student_attendance">
+
+    <TextView
+        android:id="@+id/st_home_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textSize="20sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/st_inst_id1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Institution ID"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/st_att_ccode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Code"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/st_att_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/cardview_light_background"
+                >
+
+                <EditText
+                    android:id="@+id/st_att_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Attendance Code"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/st_update_depertment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Depertment"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/st_att_semester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Semester"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                </Spinner>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/st_att_present"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                ></CheckBox>
+            <CheckBox
+                android:id="@+id/st_att_absent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                ></CheckBox>
+            <CheckBox
+                android:id="@+id/st_att_late"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Late"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                ></CheckBox>
+
+            <Button
+                android:id="@+id/st_att_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                ></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nagivation_student"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/icon_color_state"
+        app:itemTextColor="@drawable/icon_color_state"
+        app:menu="@menu/nav_items" />
+
+</RelativeLayout>

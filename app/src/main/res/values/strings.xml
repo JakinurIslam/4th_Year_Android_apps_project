@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Attendance Management System</string>
+
+    <string-array name="Type">
+        <item> Teacher </item>
+        <item> Student </item>
+        <item> Parent </item>
+    </string-array>
+    <string-array name="Depertment">
+        <item> B.MED.Sc </item>
+        <item> BCSE </item>
+        <item> BEE </item>
+        <item> BCE </item>
+        <item> BME </item>
+    </string-array>
+
+    <string-array name="Semester">
+        <item> Spring </item>
+        <item> Fall </item>
+        <item> Summer </item>
+    </string-array>
+
+    <string-array name="Course">
+        <item> Math </item>
+        <item> Java </item>
+        <item> English </item>
+    </string-array>
+</resources>
